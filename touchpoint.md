@@ -33,6 +33,7 @@ Polymorphism - > Object having different forms
 * In method overloading , the most specific version is choosed  for the type
   When overloading a method , the Access level cannot be reduced
 
+
 ## Polymorphism
    * Subclasses define its own behaviour , but same functionality of the Parent class
     
@@ -76,6 +77,29 @@ no modifier| Y	| Y	| N	 | N     |
 private	 | Y	| N	| N	 | N     |
 
 
+# Creating Objects
+  - new
+  - Class.forName().newInstance()
+  - clone() - Should implement Clonable Interface
+  - Deserialization - Reading from File
+
+# Object class methods
+  - clone - Class should implement Clonable Interface
+  - equals
+  - finalize , called by Garbage collector to garbage collect
+  - getClass
+  - hashCode
+  - wait , Causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object.
+  - Notify all - Wakes up a single thread that is waiting on this object's monitor.
+
+# Interface
+- Provides contract between class and the real world
+- All the methods dont have implementation
+- All the methods are public by default
+- Interface can be used as a Type
+- Use default and static methods - To extend the Interfaces
+  - Class extending two Interfaces having same signature Default methods , Compile time Error
+
 System.arrayCopy
 Arrays -> copyOf
        -> binarySearch
@@ -96,6 +120,41 @@ Switch case works for Numbers , Enums , Strings
 
 labeled, unlabelled break/continue
 
+# String, String Buffer and String Builder
+* Strings
+  * create using new keyword - >
+  * toString
+  * doubleQuotes
+* String methods
+  * charAt
+  * length
+  * concat
+  * format
+  * valueOf
+  * equalsIgnoreCase
+  * split
+  * contains
+  * startsWith
+  * matches
+  * indexOf
+  * toUppercase
+  * toLowercase
+  * subString
+  * trim
+  * replace - accepts char
+  * replaceAll - accepts regex and replacement string
+* StringBuilder -mutable
+ * capacity - default 16
+ * append
+ * insert
+ * replace
+ * delete
+ * reverse
+ 
+* StringBuffer - thraedsafe
+* StringBuilder - not thread safe
+* Autoboxing - Conversion of primitive to Wrapper type
+* Unboxing - Conversion of Wrapper to primitive
 
 # Collections
     - Group of elements
@@ -147,41 +206,7 @@ SynchronizedWrappers
 UnmodifiableWrappers
   Interface.unmodifiableXXX
 
-# String, String Buffer and String Builder
-* Strings
-  * create using new keyword - >
-  * toString
-  * doubleQuotes
-* String methods
-  * charAt
-  * length
-  * concat
-  * format
-  * valueOf
-  * equalsIgnoreCase
-  * split
-  * contains
-  * startsWith
-  * matches
-  * indexOf
-  * toUppercase
-  * toLowercase
-  * subString
-  * trim
-  * replace - accepts char
-  * replaceAll - accepts regex and replacement string
-* StringBuilder -mutable
- * capacity - default 16
- * append
- * insert
- * replace
- * delete
- * reverse
- 
-* StringBuffer - thraedsafe
-* StringBuilder - not thread safe
-* Autoboxing - Conversion of primitive to Wrapper type
-* Unboxing - Conversion of Wrapper to primitive
+
 
 
 
@@ -194,20 +219,6 @@ Java Pass by Value
 Call by value - The caller and calee has different varialbes
 Call by reference - The caller and the calee has same variables
 
-Creating Objects
-  - new
-  - Class.forName().newInstance()
-  - clone() - Should implement Clonable Interface
-  - Deserialization - Reading from File
-
-Object class methods
-  - clone - Class should implement Clonable Interface
-  - equals
-  - finalize , called by Garbage collector to garbage collect
-  - getClass
-  - hashCode
-  - wait , Causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object.
-  - Notify all - Wakes up a single thread that is waiting on this object's monitor.
 
 Method return Type
   - You can reurn an object which is of same type , or a Subclass of it
@@ -241,13 +252,7 @@ Annotations
  - syntax @interface annotationname{}
           @Retention - When that annotation is used
           @Target - Where can the annotaion be applied
-Interface
-    - Provides contract between class and the real world
-    - All the methods dont have implementation
-    - All the methods are public by default
-    - Interface can be used as a Type
-    - Use default and static methods - To extend the Interfaces
-        - Class extending two Interfaces having same signature Default methods , Compile time Error
+
 
 
 
