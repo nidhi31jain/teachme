@@ -32,7 +32,8 @@ Polymorphism - > Object having different forms
 * The compiler does not consider return type when differentiating methods
 * In method overloading , the most specific version is choosed  for the type
   When overloading a method , the Access level cannot be reduced
-
+# Overriding methods
+Method return Type - You can reurn an object which is of same type , or a Subclass of it
 
 ## Polymorphism
    * Subclasses define its own behaviour , but same functionality of the Parent class
@@ -76,6 +77,13 @@ protected	 | Y	| Y	| Y	 | N     |
 no modifier| Y	| Y	| N	 | N     |
 private	 | Y	| N	| N	 | N     |
 
+# Final Modifier
+  - Variable - it`s value cannot change
+  - Method - Cannot be overridden by the sub-classes
+  - Class - Cannot be sub-classed
+
+# Static - Common across instances
+  - A static method cannot access this keyword ,as the Keyword belongs to instance
 
 # Creating Objects
   - new
@@ -91,6 +99,12 @@ private	 | Y	| N	| N	 | N     |
   - hashCode
   - wait , Causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object.
   - Notify all - Wakes up a single thread that is waiting on this object's monitor.
+
+# Initialization 
+## Static field
+- Using static block
+## Instance field
+- Using final methods or initializer blocks
 
 # Interface
 - Provides contract between class and the real world
@@ -110,15 +124,14 @@ Pre-Increment
 Post-Increment
 
 # Operator
-&& , || exhibit short circuiting Behaviour
-
-?: -> if-then-else
-
-null -> not instance of anything
-
-Switch case works for Numbers , Enums , Strings
-
-labeled, unlabelled break/continue
+* && , || exhibit short circuiting Behaviour
+* ?: -> if-then-else
+* null -> not instance of anything
+* Switch case works for Numbers , Enums , Strings
+* labeled, unlabelled break/continue
+## Equals and ==
+== Works on Primitives only, checks if the references match
+equals compares the actual Objects
 
 # String, String Buffer and String Builder
 * Strings
@@ -207,146 +220,101 @@ SynchronizedWrappers
 UnmodifiableWrappers
   Interface.unmodifiableXXX
 
-
-
-
-
-
-Varargs - Varialbe arguments
-  Example - System.out.printf()
-
-Java Pass by Value
+# Java Pass by Value
   - When method is called , the Object reference is passed as value.
 Call by value - The caller and calee has different varialbes
 Call by reference - The caller and the calee has same variables
 
+# Nested Classes
+- Static- Static nested class
+- non Static - Inner class
+  * Anonymous - no name specified
+  * Local - defined within a block
+   * Cannot have static variables , as it belongs to instance of the Outer class
+   * Can access variables that are declared final/ Effectively Final (Java8)
+To access a variable outside scope of the Inner class(if the var is of same name) , use OuterClass.this.var
+# ENUM - Set of predefined Constants
+# Annotations
+- Compiletime/Deployment time - @Override
+- Runtime - JAXRS
+- syntax @interface annotationname{}
+@Retention - When that annotation is used
+@Target - Where can the annotaion be applied
 
-Method return Type
-  - You can reurn an object which is of same type , or a Subclass of it
+# Comparator vs Comparable
+- Comparable , Compares this with other object - Natural order sorting
+- Comparator , Compares two objects - Custom sorting - Sorting a Library
+- ClasscastException when the Comparator , or comparable is not implemented
+## Hashcode
+- By definition, if two objects are equal, their hash code must also be equal. If you override the equals() method, you change the way two objects are equated and Object's implementation of hashCode() is no longer valid 
+Therefore, if you override the equals() method, you must also override the hashCode() method as well.
 
-Static - Common across instances
-  - A static method cannot access this keyword ,as the Keyword belongs to instance
+When inserting data to HashTable , the Hashcode method is used to generate the key. If the same key is present, then the equal method is checked.So , if two objects are equal , then the hashcode should be definitely same
 
-Final Modifier
-  - Variable - it`s value cannot change
-  - Method - Cannot be overridden by the sub-classes
-  - Class - Cannot be sub-classed
-
-Initializing Static field
-    - Using static block
-
-Initializing Instance field
-    - Using final methods or initializer blocks
-
-Nested Classes
-  - Static- Static nested class
-  - non Static - Inner class
-    - Anonymous - no name specified
-    - Local - defined within a block
-       - Cannot have static variables , as it belongs to instance of the Outer class
-       - Can access variables that are declared final/ Effectively Final (Java8)
-   To access a variable outside scope of the Inner class(if the var is of same name) , use OuterClass.this.var
-ENUM - Set of predefined Constants
-Annotations
- - Compiletime/Deployment time - @Override
- - Runtime - JAXRS
- - syntax @interface annotationname{}
-          @Retention - When that annotation is used
-          @Target - Where can the annotaion be applied
-
-
-
-
- Equals and ==
-      == Works on Primitives only, checks if the references match
-      equals compares the actual Objects
-
-
- Comparator vs Comparable
-      - Comparable , Compares this with other object - Natural order sorting
-      - Comparator , Compares two objects - Custom sorting - Sorting a Library
-      - ClasscastException when the Comparator , or comparable is not implemented
- Hashcode
-      -     By definition, if two objects are equal, their hash code must also be equal.
-      If you override the equals() method, you change the way two objects are equated
-      and Object's implementation of hashCode() is no longer valid
-      Therefore, if you override the equals() method, you must also override the hashCode() method as well.
-
-      When inserting data to HashTable , the Hashcode method is used to generate the key. If the same key is present ,
-      then the equal method is checked.So , if two objects are equal , then the hashcode should be definitely same
-
- Character class
-    - isDigit
-    - isLetter
-    - isUpperCase
-    - isLowerCase
+# Character class
+- isDigit
+- isLetter
+- isUpperCase
+- isLowerCase
     
- Immutable - Cannot change
-  - final class type
-  - no setters
+# Immutable - Cannot change
+- final class type
+- no setters
 
-String pools(partition in Heap)
+# String pools(partition in Heap)
+-> Strings are most used components , hence Strings are stored in String pool for 
+re-usablity
+-> String literals are re-used(loaded from pool) if the same String literal is used again.
+-> Strings created using new keyword gets created in Heap even if the value is present in pool 
 
- -> Strings are most used components , hence Strings are stored in String pool for 
-    re-usablity
- -> String literals are re-used(loaded from pool) if the same String literal is used again.
- -> Strings created using new keyword gets created in Heap even if the value is present in pool 
+# Generics - More detectible bug during compile time
+- Strong compile time checks
+- Write generic algorithm
+- Elimination of Casts
 
- 
+Generic classes are defined by class name followed by Type variable
+Raw Type - When a generic class is instantiated without type
+Generic Methods - define their own type parameters , parameters defined just before the return types
+Lower bound Wildcards - to work with any class and its superclasses - super keyword
+Upper bound Wildcards - to work with any class and its subclasses - extends keyword
+Type Erasure - Java compiler replaces the Type parameters with corresponding Bounds
 
- Generics - More detectible bug during compile time
-          - Strong compile time checks
-          - Write generic algorithm
-          - Elimination of Casts
+# Exception - An event which distrupts the actual flow of the Program
+Exception propogates from the place where exception occurs through the stack trace till it finds an exception handler
+Throwable ->Error & Exception
+Types
+- Checked Exceptions
+- Error
+- Runtime Exceptions
+If a catch block handles more than one exception type, then the catch parameter is implicitly final.
 
- Generic classes are defined by class name followed by Type variable
- Raw Type - When a generic class is instantiated without type
- Generic Methods - define their own type parameters , parameters defined just before the return types
- Lower bound Wildcards - to work with any class and its superclasses - super keyword
- Upper bound Wildcards - to work with any class and its subclasses - extends keyword
- Type Erasure - Java compiler replaces the Type parameters with corresponding Bounds
+# I/O Stream - input source or an output destination
+Input/Output Stream - R/W Bytes
+Readers/Writers - R/W Characters
+Scanner , Printer - Human readable form
+Files , Paths - File operations
 
- Exception - An event which distrupts the actual flow of the Program
- Exception propogates from the place where exception occurs through the stack trace till it finds an exception handler
- Throwable ->Error & Exception
- Types
-    - Checked Exceptions
-    - Error
-    - Runtime Exceptions
-  If a catch block handles more than one exception type,
-  then the catch parameter is implicitly final.
+# Process , Threads
+* Process - Program execution
+* Thread  - Part of Process
 
-  I/O Stream - input source or an output destination
-  Input/Output Stream - R/W Bytes
-  Readers/Writers - R/W Characters
-  Scanner , Printer - Human readable form
-  Files , Paths - File operations
+Thread - Path followed when executing a Program
+Multithreading - Two or more tasks getting executed concurrently
+-Implementing Runnable
+-Extending Thread
 
-  Process , Threads
+Thread.sleep - > throws InterruptedException
 
-  Process - Program execution
-  Thread  - Part of Process
+Interrupt -> Stop the continuous process
+Thread.interrupted () -> to check if thread is Interrupted
+T.interrupt() -> to Interrupt a thread
+T.join -> stops the current thread till the Execution of T is completed
 
-  Thread - Path followed when executing a Program
-  Multithreading - Two or more tasks getting executed concurrently
-    -Implementing Runnable
-    -Extending Thread
+* When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
 
-  Thread.sleep - > throws InterruptedException
+* When a thread invokes a synchronized method, it automatically acquires the intrinsic lock for that method's object and releases it when the method returns
 
-  Interrupt -> Stop the continuous process
-  Thread.interrupted () -> to check if thread is Interrupted
-  T.interrupt() -> to Interrupt a thread
-  T.join -> stops the current thread till the Execution of T is completed
-
-  When one thread is executing a synchronized method for an object,
-  all other threads that invoke synchronized methods for the same object block (suspend execution)
-  until the first thread is done with the object.
-
-  When a thread invokes a synchronized method, it automatically acquires the intrinsic lock
-  for that method's object and releases it when the method returns
-
-  wait -> thread to wait notifyAll -> wake up from wait
+wait -> thread to wait notifyAll -> wake up from wait
 
 # JDBC
 - Create a Connection
