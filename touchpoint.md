@@ -354,27 +354,28 @@ String pools(partition in Heap)
 - Process resultset
 - Close connection
 
-  - Statement.addTOBatch
-  - Statement.executeBatch
-  - ResultSet.moveToCurrent/InsertRow
-  - statement.executeUpdate
-Transaction - A transaction is a set of one or more statements that is executed as a unit,
+- Statement.addTOBatch
+- Statement.executeBatch
+- ResultSet.moveToCurrent/InsertRow
+- statement.executeUpdate
+## Transaction
+A transaction is a set of one or more statements that is executed as a unit,
 so either all of the statements are executed, or none of the statements is executed.
-Transaction Levels
-  - None
-  - Read Uncomitted
-  - Reads comitted
-  - Repeatable-Read
-  - Serializable
+### Transaction Levels
+- None
+- Read Uncomitted
+- Reads comitted
+- Repeatable-Read
+- Serializable
 
-Savepoint - Multiple transactions
-  - conn.setSavepoint()
-  - conn.rollBack(svpt)
-  - conn.releaseSavePoint(svpt)
+### Savepoint - Multiple transactions
+- conn.setSavepoint()
+- conn.rollBack(svpt)
+- conn.releaseSavePoint(svpt)
 System and env variable
 Null values in collection
 
-JPA - ORM Framework
+# JPA - ORM Framework
 Object Relational Framework
 Entity - A class persisted in a database
 @Transient - Field not to be saved in Database
@@ -463,12 +464,12 @@ Web container calls all the init,destroy,service methods
   @WebService , @WebMethod(operation)
 
 # WSDL
-        Types– a container for data type definitions using some type system (such as XSD).
-        Message– an abstract, typed definition of the data being communicated.
-        Port Type–an abstract set of operations supported by one or more endpoints.
-        Binding– a concrete protocol and data format specification for a particular port type.
-        Port– a single endpoint defined as a combination of a binding and a network address.
-        Service– a collection of related endpoints.
+* Types– a container for data type definitions using some type system (such as XSD).
+* Message– an abstract, typed definition of the data being communicated.
+* Port Type–an abstract set of operations supported by one or more endpoints.
+* Binding– a concrete protocol and data format specification for a particular port type.
+* Port– a single endpoint defined as a combination of a binding and a network address.
+* Service– a collection of related endpoints.
 
 # Patterns
 Singleton -> creates single Instance
