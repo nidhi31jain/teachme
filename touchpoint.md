@@ -149,38 +149,39 @@ UnmodifiableWrappers
 
 # String, String Buffer and String Builder
 * Strings
-          * create using new keyword - >
-          * toString
-          * doubleQuotes
- String methods
-     -charAt
-     -length
-     -concat
-     -format
-     -valueOf
-     -equalsIgnoreCase
-     -split
-     -contains
-     -startsWith
-     -matches
-     -indexOf
-     -toUppercase
-     -toLowercase
-     -subString
-     -trim
-     -replace - accepts char
-     -replaceAll - accepts regex and replacement string
-  StringBuilder -mutable
-      - capacity - default 16
-      - append
-      - insert
-      - replace
-      - delete
-      - reverse
- StringBuffer - thraedsafe
- StringBuilder - not thread safe
- Autoboxing - Conversion of primitive to Wrapper type
- Unboxing - Conversion of Wrapper to primitive
+  * create using new keyword - >
+  * toString
+  * doubleQuotes
+* String methods
+  * charAt
+  * length
+  * concat
+  * format
+  * valueOf
+  * equalsIgnoreCase
+  * split
+  * contains
+  * startsWith
+  * matches
+  * indexOf
+  * toUppercase
+  * toLowercase
+  * subString
+  * trim
+  * replace - accepts char
+  * replaceAll - accepts regex and replacement string
+* StringBuilder -mutable
+ * capacity - default 16
+ * append
+ * insert
+ * replace
+ * delete
+ * reverse
+ 
+* StringBuffer - thraedsafe
+* StringBuilder - not thread safe
+* Autoboxing - Conversion of primitive to Wrapper type
+* Unboxing - Conversion of Wrapper to primitive
 
 
 
