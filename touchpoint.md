@@ -148,10 +148,10 @@ UnmodifiableWrappers
   Interface.unmodifiableXXX
 
 # String, String Buffer and String Builder
-Strings
-    -create using new keyword - >
-    -toString
-    -doubleQuotes
+* Strings
+          * create using new keyword - >
+          * toString
+          * doubleQuotes
  String methods
      -charAt
      -length
