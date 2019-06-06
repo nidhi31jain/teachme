@@ -6,3 +6,8 @@
   
 # Java
  * [accenture-java-interview-questions](https://www.wisdomjobs.com/e-university/accenture-java-interview-questions.html)
+ 
+# SOAPUI
+ * https://www.wisdomjobs.com/e-university/soap-ui-interview-questions.html
+ 
+ https://www.wisdomjobs.com/e-university/all-skillsets-interview-questions.html
