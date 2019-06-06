@@ -10,7 +10,7 @@ This project is to add my learning.
 ------
 
 * Postman (Time Required : 4 Hours)
- * Postman Fundamentals - Pluralsight
+  * Postman Fundamentals - Pluralsight
 
 * Jenkins (Time Required : 1 Hours)
 
