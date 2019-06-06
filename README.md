@@ -11,3 +11,13 @@ This project is to add my learning.
 
 * Postman (Time Required : 4 Hours)
  * Postman Fundamentals - Pluralsight
+
+* Jenkins (Time Required : 1 Hours)
+
+* Git (Time Required : 1 Hours)
+
+
+* JIRA
+* Confluence
+* HPE Quality Center
+* Clarity
