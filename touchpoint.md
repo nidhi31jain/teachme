@@ -5,6 +5,8 @@
 
 Object -> Representation of states and behavior of real world Objects
 Class  -> Blueprint on which Objects are created
+
+# OOPS 
 Inheritance -> State and Behaviour inherited from super classes
 Interface -> Contract between class and outside world
           -> Hiding details and showing functionality
@@ -14,11 +16,27 @@ Polymorphism - > Object having different forms
     - Subclasses define its own behaviour , but same functionality of the Parent class
     - Interface/Parent class type
     
-Class Variables (Static variables)
-Instance Variables
-Local Variables
+## Inheritance
+  * Get the state and Behaviour from the super classes
+  * Object class is the super class for all classes
+  * Multiple Inheritance not allowed
+      * Two classes having a method with a same signature
 
-# Data Type
+  1. Static methods with same signature in child class - Method hiding
+  2. Instance methods with same signature in child class - Method over-riding
+  3. Methods with same name anbd different parameters - Method overloading
+  4.  Inherited instance methods from classes can override abstract interface methods
+
+# Overloading methods
+* Different Parameters(By type or by Numbers)
+* The compiler does not consider return type when differentiating methods
+* In method overloading , the most specific version is choosed  for the type
+  When overloading a method , the Access level cannot be reduced
+
+## Polymorphism
+   * Subclasses define its own behaviour , but same functionality of the Parent class
+    
+ # Data Type
 byte - 8 bit
 short - 16 bit
 int - 32 bit
@@ -29,6 +47,34 @@ char -16 bit
 
 Uninitialized local variable -> Compile time error
 Prefix 0x->Hexa 0b->Binary
+
+# Variables 
+* Class Variables (Static variables)
+* Instance Variables
+* Local Variables 
+
+# Constructors
+- Called when the object is created
+- Default constuctor is implicitly called
+- The subclass constructor implicitly calls the default constructor of the Parent
+  - It is always better to have a Default constructor along with the Parametrized constructor ,
+    as it does not mandate the subclass to call the parametrized constructor.
+
+# Access Modifiers
+* Public
+* Private - Restricted to own class
+* Protected - Restricted to the sublclasses
+* Default - Restricted to packages
+
+Access Levels
+
+Modifier	 | Class	| Package	| Subclass | World |
+| -------- |:------:| -------:|---------:|------:|
+public	 | Y	| Y	| Y	 | Y     |
+protected	 | Y	| Y	| Y	 | N     |
+no modifier| Y	| Y	| N	 | N     |
+private	 | Y	| N	| N	 | N     |
+
 
 System.arrayCopy
 Arrays -> copyOf
@@ -50,34 +96,94 @@ Switch case works for Numbers , Enums , Strings
 
 labeled, unlabelled break/continue
 
-# Access Modifiers
-* Public
-* Private - Restricted to own class
-* Protected - Restricted to the sublclasses
-* Default - Restricted to packages
 
-Access Levels
+# Collections
+    - Group of elements
+    - Provides useful data structures and algorithms
+* Collection Interface
+  * size
+  * isEmpty
+  * add
+  * remove
+  * iterator
 
-Modifier	 | Class	| Package	| Subclass | World |
-| -------- |:------:| -------:|---------:|------:|
-public	 | Y	| Y	| Y	 | Y     |
-protected	 | Y	| Y	| Y	 | N     |
-no modifier| Y	| Y	| N	 | N     |
-private	 | Y	| N	| N	 | N     |
+  * addAll - union
+  * removeAll - subtraction
+  * retainAll - intersection
+  * clear
+  
+ * Iterator
+    *# hasNext
+    *# next
+    *# Remove
+    
+Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
+
+List - Ordered collection - ArrayList , LinkedList
+      - Positional Access
+      - ListIterator
+      - sort
+      - binary search
+Queue - LinkedList
+  Throws exception
+      - add
+      - remove
+      - element
+  Returns special value
+      - offer
+      - poll
+      - peek
+DeQueue - LinkedList
+      - all operations of Queue at the begining and end
+Map - Key and values - HashMap , TreeMap , LinkedHashMap
+  - Collection Views
+    - Keyset
+    -Values
+    -Entryset(to iterate over a Map)
+SortedSet
+SortedMap - Keys in sorted Order
+SynchronizedWrappers
+  Interface.synchronizedXXX
+UnmodifiableWrappers
+  Interface.unmodifiableXXX
+
+# String, String Buffer and String Builder
+Strings
+    -create using new keyword - >
+    -toString
+    -doubleQuotes
+ String methods
+     -charAt
+     -length
+     -concat
+     -format
+     -valueOf
+     -equalsIgnoreCase
+     -split
+     -contains
+     -startsWith
+     -matches
+     -indexOf
+     -toUppercase
+     -toLowercase
+     -subString
+     -trim
+     -replace - accepts char
+     -replaceAll - accepts regex and replacement string
+  StringBuilder -mutable
+      - capacity - default 16
+      - append
+      - insert
+      - replace
+      - delete
+      - reverse
+ StringBuffer - thraedsafe
+ StringBuilder - not thread safe
+ Autoboxing - Conversion of primitive to Wrapper type
+ Unboxing - Conversion of Wrapper to primitive
 
 
 
-Overloading methods
-- Different Parameters(By type or by Numbers)
-- The compiler does not consider return type when differentiating methods
-- In method overloading , the most specific version is choosed  for the type
-
-Constructors
-- Called when the object is created
-- Default constuctor is implicitly called
-- The subclass constructor implicitly calls the default constructor of the Parent
-  - It is always better to have a Default constructor along with the Parametrized constructor ,
-    as it does not mandate the subclass to call the parametrized constructor.
 
 Varargs - Varialbe arguments
   Example - System.out.printf()
@@ -142,21 +248,7 @@ Interface
     - Use default and static methods - To extend the Interfaces
         - Class extending two Interfaces having same signature Default methods , Compile time Error
 
-Inheritance
-    - Get the state and Behaviour from the super classes
-    - Object class is the super class for all classes
-    Multiple Inheritance not allowed
-      - Two classes having a method with a same signature
 
-  Static methods with same signature in child class - Method hiding
-  Instance methods with same signature in child class - Method over-riding
-  Methods with same name anbd different parameters - Method overloading
-  Inherited instance methods from classes can override abstract interface methods
-
-  When overloading a method , the Access level cannot be reduced
-
- Polymorphism
-      - Subclasses define its own behaviour , but same functionality of the Parent class
 
  Equals and ==
       == Works on Primitives only, checks if the references match
@@ -193,39 +285,7 @@ String pools(partition in Heap)
  -> String literals are re-used(loaded from pool) if the same String literal is used again.
  -> Strings created using new keyword gets created in Heap even if the value is present in pool 
 
- Strings
-    -create using new keyword - >
-    -toString
-    -doubleQuotes
- String methods
-     -charAt
-     -length
-     -concat
-     -format
-     -valueOf
-     -equalsIgnoreCase
-     -split
-     -contains
-     -startsWith
-     -matches
-     -indexOf
-     -toUppercase
-     -toLowercase
-     -subString
-     -trim
-     -replace - accepts char
-     -replaceAll - accepts regex and replacement string
-  StringBuilder -mutable
-      - capacity - default 16
-      - append
-      - insert
-      - replace
-      - delete
-      - reverse
- StringBuffer - thraedsafe
- StringBuilder - not thread safe
- Autoboxing - Conversion of primitive to Wrapper type
- Unboxing - Conversion of Wrapper to primitive
+ 
 
  Generics - More detectible bug during compile time
           - Strong compile time checks
@@ -281,55 +341,7 @@ String pools(partition in Heap)
 
   wait -> thread to wait notifyAll -> wake up from wait
 
-Collections
-    - Group of elements
-    - Provides useful data structures and algorithms
-Collection Interface
-     - size
-     - isEmpty
-     - add
-     - remove
-     - iterator
-
-     -addAll - union
-     -removeAll - subtraction
-     -retainAll - intersection
-     -clear
-   Iterator
-     - hasNext
-     - next
-     - Remove
-Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
-
-List - Ordered collection - ArrayList , LinkedList
-      - Positional Access
-      - ListIterator
-      - sort
-      - binary search
-Queue - LinkedList
-  Throws exception
-      - add
-      - remove
-      - element
-  Returns special value
-      - offer
-      - poll
-      - peek
-DeQueue - LinkedList
-      - all operations of Queue at the begining and end
-Map - Key and values - HashMap , TreeMap , LinkedHashMap
-  - Collection Views
-    - Keyset
-    -Values
-    -Entryset(to iterate over a Map)
-SortedSet
-SortedMap - Keys in sorted Order
-SynchronizedWrappers
-  Interface.synchronizedXXX
-UnmodifiableWrappers
-  Interface.unmodifiableXXX
-
-JDBC
+# JDBC
 - Create a Connection
 - Craete a Statement
 - Execute a Query
