@@ -10,6 +10,7 @@
 * What approach you followed 
   * Why did only this approach
   * How you follow 
+  * How did you tested your integration implementation
 
 * How big was your team
   * Did you manage someone directly
