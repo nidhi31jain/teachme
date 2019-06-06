@@ -159,7 +159,7 @@ labeled, unlabelled break/continue
 # Collections
     - Group of elements
     - Provides useful data structures and algorithms
-* Collection Interface
+## Collection Interface
   * size
   * isEmpty
   * add
@@ -178,27 +178,28 @@ labeled, unlabelled break/continue
     
 Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
-List - Ordered collection - ArrayList , LinkedList
-      - Positional Access
-      - ListIterator
-      - sort
-      - binary search
-Queue - LinkedList
-  Throws exception
-      - add
-      - remove
-      - element
-  Returns special value
-      - offer
-      - poll
-      - peek
-DeQueue - LinkedList
-      - all operations of Queue at the begining and end
-Map - Key and values - HashMap , TreeMap , LinkedHashMap
-  - Collection Views
-    - Keyset
-    -Values
-    -Entryset(to iterate over a Map)
+## List - Ordered collection - ArrayList , LinkedList
+- Positional Access
+- ListIterator
+- sort
+- binary search
+
+## Queue - LinkedList
+Throws exception
+- add
+- remove
+- element
+Returns special value
+- offer
+- poll
+- peek
+## DeQueue - LinkedList
+- all operations of Queue at the begining and end
+## Map - Key and values - HashMap , TreeMap , LinkedHashMap
+- Collection Views
+  - Keyset
+  -Values
+  -Entryset(to iterate over a Map)
 SortedSet
 SortedMap - Keys in sorted Order
 SynchronizedWrappers
