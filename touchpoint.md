@@ -1,4 +1,4 @@
-#Core Java#
+# Core Java
 * JVM -> Virtual machine where the code runs.
 * JDK -> Provides tools for Development(Compilers ...)
 * JRE -> Provides JVM and other lib for the code to run
@@ -18,7 +18,7 @@ Class Variables (Static variables)
 Instance Variables
 Local Variables
 
-#Data Type#
+# Data Type
 byte - 8 bit
 short - 16 bit
 int - 32 bit
@@ -39,7 +39,7 @@ Arrays -> copyOf
 Pre-Increment
 Post-Increment
 
-# Operator #
+# Operator
 && , || exhibit short circuiting Behaviour
 
 ?: -> if-then-else
@@ -59,6 +59,7 @@ labeled, unlabelled break/continue
 Access Levels
 
 Modifier	 | Class	| Package	| Subclass | World
+-------------------------------------------------
 public	 | Y	| Y	| Y	 | Y
 protected	 | Y	| Y	| Y	 | N
 no modifier| Y	| Y	| N	 | N
@@ -444,7 +445,7 @@ Web container calls all the init,destroy,service methods
     - Advantages - Uses WS-*** Protocols for Security, QoS
     @WebService , @WebMethod(operation)
 
-WSDL
+# WSDL
         Types– a container for data type definitions using some type system (such as XSD).
         Message– an abstract, typed definition of the data being communicated.
         Port Type–an abstract set of operations supported by one or more endpoints.
@@ -452,34 +453,13 @@ WSDL
         Port– a single endpoint defined as a combination of a binding and a network address.
         Service– a collection of related endpoints.
 
-MongoDB Advantages
-Large volumes of structured, semi-structured, and unstructured data
-Frequent code changes ,as it is schemaless
-Object-oriented programming that is easy to use and flexible
-
-Shrading - The data is split across various servers
-Replication - The data is duplicated across various servers for Availablity
-mongoimport
-use db
-db.createCollection(Name)
-db.collXX.insert()
-db.collXX.find()
-db.coll.update(query,$set:value) , to update multiple values , use multi=true
-upsert -> if the query in update is not found , it does an insertion
-remove() -> to remove a doc
-drop() -> to drop a collection
-db.collection.getIndexes()
-db.collection.createIndex()
-
-MongoClient -> Mongodatabase -> MongoCollection
-Morphia -> map Packages ->createDatastore
-
+# Patterns
 Singleton -> creates single Instance
 Facade  -> hides the sub-system implementation to the clients ,and acts as single point of contact
 Factory -> Object creation -> Subclasses responsible for Object creation
 Adaptor -> mapping from one interface to another interface
 
-Spring
+# Spring
   - Light weight Java Framework - Alternative to EJB
   Modules
           - core
