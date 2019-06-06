@@ -11,6 +11,7 @@ This project is to add my learning.
 
 * Postman (Time Required : 4 Hours)
   * Postman Fundamentals - Pluralsight
+  Practice : Create a postman project and call 
 
 * Jenkins (Time Required : 1 Hours)
 
