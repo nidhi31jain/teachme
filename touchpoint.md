@@ -406,26 +406,25 @@ Query
   - Entitymanager.createQuery
   - Entitymanager.createNamedQuery
 
-Servlet technology is used to create web application
+# J2EE
+## Servlet Interface
+- init
+- destroy
+- service
+- getServletInfo
+- getServletConfig
 
-Servlet Interface
-  - init
-  - destroy
-  - service
-  - getServletInfo
-  - getServletConfig
+### HTTPServlet
+- doGet
+- doPost
+- doXXX
 
-HTTPServlet
-  - doGet
-  - doPost
-  - doXXX
-
-LifeCyle of Servlet
-  Servlet class is loaded.
-  Servlet instance is created.
-  init method is invoked.
-  service method is invoked.
-  destroy method is invoked.
+### LifeCyle of Servlet
+* Servlet class is loaded.
+* Servlet instance is created.
+* init method is invoked.
+* service method is invoked.
+* destroy method is invoked.
 
 Web container calls all the init,destroy,service methods
 
@@ -453,15 +452,15 @@ Web container calls all the init,destroy,service methods
 
   Session Tracking is a way to maintain state of an user.
 
-  REST - An architecture style for networking application
-  Resource identification through URI
-  Manuplate the resource using database
+# REST - An architecture style for networking application
+* Resource identification through URI
+* Manuplate the resource using database
 
-  Webservices
-    - Based on WSDl
-    - Use XML , and SOAP protocol
-    - Advantages - Uses WS-*** Protocols for Security, QoS
-    @WebService , @WebMethod(operation)
+# Webservices
+- Based on WSDl
+- Use XML , and SOAP protocol
+- Advantages - Uses WS-*** Protocols for Security, QoS
+  @WebService , @WebMethod(operation)
 
 # WSDL
         Types– a container for data type definitions using some type system (such as XSD).
@@ -509,7 +508,4 @@ Adaptor -> mapping from one interface to another interface
    
    A CONTAINER provides an execution environment that is responsible for adding the technical concerns to the COMPONENTS
    
-   The id should be unique for a Bean. A bean can have multiple names .If an id is not given to a bean , the container will generate its 
-   own id
-   
-                    
+   The id should be unique for a Bean. A bean can have multiple names .If an id is not given to a bean , the container will generate its own id 
