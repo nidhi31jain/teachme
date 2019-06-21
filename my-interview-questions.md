@@ -12,24 +12,24 @@ POM stands for Project Object Model. It is fundamental Unit of Work in Maven. It
 
 * What Information Does Pom Contain?
 POM contains the some of the following configuration information −
- * project dependencies.
- * plugins.
- * goals.
- * build profiles.
- * project version.
- * developers.
- * mailing list.
+  * project dependencies.
+  * plugins.
+  * goals.
+  * build profiles.
+  * project version.
+  * developers.
+  * mailing list.
 
 * What Would The Command Mvn Clean Do ?
- * mvn clean - This command removes the target directory with all the build data before starting the build process.
- * mvn validate = validate the project is correct and all necessary information is available.
- * compile − compile the source code of the project.
- * test − test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
- * package − take the compiled code and package it in its distributable format, such as a JAR.
- * integration-test − process and deploy the package if necessary into an environment where integration tests can be run.
- * verify − run any checks to verify the package is valid and meets quality criteria.
- * install − install the package into the local repository, for use as a dependency in other projects locally.
- * deploy − done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+  * mvn clean - This command removes the target directory with all the build data before starting the build process.
+  * mvn validate = validate the project is correct and all necessary information is available.
+  * compile − compile the source code of the project.
+  * test − test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+  * package − take the compiled code and package it in its distributable format, such as a JAR.
+  * integration-test − process and deploy the package if necessary into an environment where integration tests can be run.
+  * verify − run any checks to verify the package is valid and meets quality criteria.
+  * install − install the package into the local repository, for use as a dependency in other projects locally.
+  * deploy − done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
 
 * What Is Maven Artifact?
 An artifact is a file, usually a JAR that gets deployed to a Maven repository. A Maven build produces one or more artifacts, such as a compiled JAR and a "sources" JAR.<br>
