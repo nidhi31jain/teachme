@@ -1,16 +1,16 @@
 # Maven
-* What Is Maven?
+* What Is Maven?<br>
 Maven is a project management and comprehension tool. Maven provides developers a complete build lifecycle framework. Development team can automate the project's build infrastructure(jenkins) in almost no time as Maven uses a standard directory layout and a default build lifecycle.
 
-* How Do You Know The Version Of Mvn You Are Using?
+* How Do You Know The Version Of Mvn You Are Using?<br>
 Type the following command :
 ```javascript
 mvn --version
 ```
-* What Is Pom?
+* What Is Pom?<br>
 POM stands for Project Object Model. It is fundamental Unit of Work in Maven. It is an XML file. It always resides in the base directory of the project as pom.xml. It contains information about the project and various configuration details used by Maven to build the project(s).
 
-* What Information Does Pom Contain?
+* What Information Does Pom Contain?<br>
 POM contains the some of the following configuration information −
   * project dependencies.
   * plugins.
@@ -20,7 +20,7 @@ POM contains the some of the following configuration information −
   * developers.
   * mailing list.
 
-* What Would The Command Mvn Clean Do ?
+* What Would The Command Mvn Clean Do ?<br>
   * mvn clean - This command removes the target directory with all the build data before starting the build process.
   * mvn validate = validate the project is correct and all necessary information is available.
   * compile − compile the source code of the project.
@@ -31,20 +31,20 @@ POM contains the some of the following configuration information −
   * install − install the package into the local repository, for use as a dependency in other projects locally.
   * deploy − done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
 
-* What Is Maven Artifact?
+* What Is Maven Artifact?<br>
 An artifact is a file, usually a JAR that gets deployed to a Maven repository. A Maven build produces one or more artifacts, such as a compiled JAR and a "sources" JAR.<br>
 Each artifact has a group ID (usually a reversed domain name, like com.example.foo), an artifact ID (just a name), and a version string. The three together uniquely identify the artifact. A project's dependencies are specified as artifacts.
 
-* What Is A Maven Repository?
+* What Is A Maven Repository?<br>
 A repository is a place i.e. directory where all the project jars, library jar, plugins or any other project specific artifacts are stored and can be used by Maven easily.
 
-* What Types Of Maven Repository?
+* What Types Of Maven Repository?<br>
  Maven repository are of three types:
  * local - Maven local repository is a folder location on your machine. It gets created when you run any maven command for the first time. Maven local repository keeps your project's all dependencies (library jars, plugin jars etc)
  * central - It is repository provided by Maven community. It contains a large number of commonly used libraries. When Maven does not find any dependency in local repository, it starts searching in central repository using following URL: http://repo1.maven.org/maven2/.
  * remote - Sometimes, Maven does not find a mentioned dependency in central repository as well then it stops the build process and output error message to console. To prevent such situation, Maven provides concept of Remote Repository which is developer's own custom repository containing required libraries or other project jars.
 
-* Why Are Maven Plugins Used?
+* Why Are Maven Plugins Used?<br>
  Maven Plugins are used to:
   * create jar file.
   * create war file.
@@ -53,12 +53,12 @@ A repository is a place i.e. directory where all the project jars, library jar, 
   * create project documentation.
   * create project reports.
  
-* What Are The Types Of Maven Plugins?
+* What Are The Types Of Maven Plugins?<br>
  Maven provides following two types of Plugins:
   * Build plugins:They execute during the build and should be configured in the element of pom.xml
   * Reporting plugins:They execute during the site generation and they should be configured in the element of the pom.xml
 
-* What Is Archetype? (*)
+* What Is Archetype? (*)<br>
  Archetype is a Maven plugin whose task is to create a project structure as per its template.
 
 * What Are The Elements In Pom That A Profile Can Modify When Specified In The Pom?
@@ -74,7 +74,7 @@ A repository is a place i.e. directory where all the project jars, library jar, 
   * <distributionManagement>
   ```
 
-* What Is Difference Between Apache Ant And Maven?
+* What Is Difference Between Apache Ant And Maven?<br>
 Ant is simply a toolbox whereas Maven is about the application of patterns in order to achieve an infrastructure which displays the characteristics of visibility, reusability, maintainability, and comprehensibility. It is wrong to consider Maven as a build tool and just a replacement for Ant.
 
 # Jenkins
