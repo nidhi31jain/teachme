@@ -62,6 +62,7 @@ A repository is a place i.e. directory where all the project jars, library jar, 
  Archetype is a Maven plugin whose task is to create a project structure as per its template.
 
 * What Are The Elements In Pom That A Profile Can Modify When Specified In The Pom?
+  ```javascript
   * <repositories>, 
   * <pluginRepositories>
   * <dependencies>
@@ -71,6 +72,7 @@ A repository is a place i.e. directory where all the project jars, library jar, 
   * <reporting>
   * <dependencyManagement>
   * <distributionManagement>
+  ```
 
 * What Is Difference Between Apache Ant And Maven?
 Ant is simply a toolbox whereas Maven is about the application of patterns in order to achieve an infrastructure which displays the characteristics of visibility, reusability, maintainability, and comprehensibility. It is wrong to consider Maven as a build tool and just a replacement for Ant.
