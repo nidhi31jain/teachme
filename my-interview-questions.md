@@ -46,31 +46,31 @@ A repository is a place i.e. directory where all the project jars, library jar, 
 
 * Why Are Maven Plugins Used?
  Maven Plugins are used to:
- * create jar file.
- * create war file.
- * compile code files.
- * unit testing of code
- * create project documentation.
- * create project reports.
+  * create jar file.
+  * create war file.
+  * compile code files.
+  * unit testing of code
+  * create project documentation.
+  * create project reports.
  
 * What Are The Types Of Maven Plugins?
  Maven provides following two types of Plugins:
- * Build plugins:They execute during the build and should be configured in the element of pom.xml
- * Reporting plugins:They execute during the site generation and they should be configured in the element of the pom.xml
+  * Build plugins:They execute during the build and should be configured in the element of pom.xml
+  * Reporting plugins:They execute during the site generation and they should be configured in the element of the pom.xml
 
 * What Is Archetype? (*)
  Archetype is a Maven plugin whose task is to create a project structure as per its template.
 
 * What Are The Elements In Pom That A Profile Can Modify When Specified In The Pom?
- * <repositories>, 
- * <pluginRepositories>
- * <dependencies>
- * <plugins>
- * <properties>
- * <modules>
- * <reporting>
- * <dependencyManagement>
- * <distributionManagement>
+  * <repositories>, 
+  * <pluginRepositories>
+  * <dependencies>
+  * <plugins>
+  * <properties>
+  * <modules>
+  * <reporting>
+  * <dependencyManagement>
+  * <distributionManagement>
 
 * What Is Difference Between Apache Ant And Maven?
 Ant is simply a toolbox whereas Maven is about the application of patterns in order to achieve an infrastructure which displays the characteristics of visibility, reusability, maintainability, and comprehensibility. It is wrong to consider Maven as a build tool and just a replacement for Ant.
