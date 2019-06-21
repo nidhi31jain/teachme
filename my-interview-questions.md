@@ -64,9 +64,8 @@ Spring framework targets to make development easier to use and promote good prog
   The Spring Web MVC framework provides model-view-controller architecture.<br>
   * M - Model - Pojo's, Object with setter getters
   * V - View - Html/JSP - User interface/UI/Any digital channels 
-  * C - Controller - Rest Endpoints/ Rest Mappings based on path
-  and ready components that can be used to develop 
-  flexible and loosely coupled web applications.
+  * C - Controller - Rest Endpoints/ Rest Mappings based on path<br>
+  Provide ready components that can be used to develop flexible and loosely coupled web applications.
   The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.
 
 
