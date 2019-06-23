@@ -1,6 +1,6 @@
 # Maven
 * What Is Maven?<br>
-Maven is a project management and comprehension tool. Maven provides developers a complete build lifecycle framework. Development team can automate the project's build infrastructure(jenkins) in almost no time as Maven uses a standard directory layout and a default build lifecycle.
+Maven is a build automation tool used primarily for Java projects. Maven addresses two aspects of building software: first, it describes how software is built, and second, it describes its dependencies.
 
 * How Do You Know The Version Of Mvn You Are Using?<br>
 Type the following command :
