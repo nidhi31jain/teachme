@@ -8,7 +8,7 @@ Type the following command :
 mvn --version
 ```
 * What Is Pom?<br>
-POM stands for Project Object Model. It is fundamental Unit of Work in Maven. It is an XML file. It always resides in the base directory of the project as pom.xml. It contains information about the project and various configuration details used by Maven to build the project(s).
+A Project Object Model or POM is the fundamental unit of work in Maven. It is an XML file that contains information about the project and configuration details used by Maven to build the project. It contains default values for most projects.
 
 * What Information Does Pom Contain?<br>
 POM contains the some of the following configuration information −
