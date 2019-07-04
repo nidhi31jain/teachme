@@ -252,30 +252,40 @@ Multithreading - Two or more tasks getting executed concurrently
 -Implementing Runnable
 -Extending Thread
 
-Thread.sleep - > throws InterruptedException
-
-Interrupt -> Stop the continuous process
-Thread.interrupted () -> to check if thread is Interrupted
-T.interrupt() -> to Interrupt a thread
-T.join -> stops the current thread till the Execution of T is completed
+* Thread.sleep - > throws InterruptedException
+* Interrupt -> Stop the continuous process
+  * Thread.interrupted () -> to check if thread is Interrupted
+  * T.interrupt() -> to Interrupt a thread
+  * T.join -> stops the current thread till the Execution of T is completed
 
 * When one thread is executing a synchronized method for an object, all other threads that invoke synchronized methods for the same object block (suspend execution) until the first thread is done with the object.
-
 * When a thread invokes a synchronized method, it automatically acquires the intrinsic lock for that method's object and releases it when the method returns
-
-wait -> thread to wait notifyAll -> wake up from wait
+```wait -> thread to wait notifyAll -> wake up from wait```
 
 # JDBC
-- Create a Connection
-- Craete a Statement
-- Execute a Query
-- Process resultset
-- Close connection
-
+* Load Driver 
+  ``` Class.forName("com.oracle.oracleDriver");```
+* Create a Connection
+  ```Conection conn = DriverManager.getConnection(url with database schema, username, password);```
+* Craete a Statement
+  ```Statement stmt = conn.getStatement();
+* Execute a Query
+  ```ResultSet resultSet = stmt.executeQuery();```
+* Process resultset
+  ```while(resultSet.hasNext()){
+      String value = (String)resultSet.next();
+  }
+* Close connection
+```
+  conn.close();
+  ```
+Other useful methods
+```
 - Statement.addTOBatch
 - Statement.executeBatch
 - ResultSet.moveToCurrent/InsertRow
 - statement.executeUpdate
+```
 ## Transaction
 A transaction is a set of one or more statements that is executed as a unit,
 so either all of the statements are executed, or none of the statements is executed.
