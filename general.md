@@ -2,15 +2,23 @@
     - Group of elements
     - Provides useful data structures and algorithms
 
- * Iterable
-   *  <font color='red'>Collection</font>
-     * <span style="color:blue">AbstractCollection</span>
-     * <span style="color:red">List</span>
-       * <span style="color:green">ArrayList</span>
-       * <span style="color:green">LinkedList</span>
-     * <span style="color:red">Set</span>
-     * <span style="color:blue"></span>
-       * <span style="color:green">HashSet</span>
+ * Iterable (Interface)
+   *  Collection (Interface) extends Iterable
+     * List (Interface) extends Collection
+       * ArrayList (Class) implements List
+       * LinkedList (Class) implements List
+     * Set
+       * HashSet (Class)
+       * SortedSet extends HashSet implements Set
+         * TreeSet (Class) extends HashSet implements SortedSet
+ 
+* Map (Interface)
+*  HashMap (Interface) extends Iterable
+ * SortedMap (Interface) extends HashMap implements Map
+   * TreeMap (Class) extends HashMap implements SortedMap
+       
+[Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
+
 ## Collection Interface
   * size
   * isEmpty
