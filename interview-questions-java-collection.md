@@ -75,3 +75,18 @@ SynchronizedWrappers<br>
   Interface.synchronizedXXX<br>
 UnmodifiableWrappers<br>
   Interface.unmodifiableXXX<br>
+  
+# Comparator 
+
+# Comparable
+
+# Comparable vs Comparator
+- Comparable , Compares this with other object - Natural order sorting
+- Comparator , Compares two objects - Custom sorting - Sorting a Library
+- ClasscastException when the Comparator , or comparable is not implemented
+# Hashcode
+- By definition, if two objects are equal, their hash code must also be equal. If you override the equals() method, you change the way two objects are equated and Object's implementation of hashCode() is no longer valid 
+Therefore, if you override the equals() method, you must also override the hashCode() method as well.
+
+When inserting data to HashTable , the Hashcode method is used to generate the key. If the same key is present, then the equal method is checked.So , if two objects are equal , then the hashcode should be definitely same
+
