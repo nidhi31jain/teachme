@@ -71,7 +71,7 @@ Methods
   - map.getKey(key)
   - map.entrySet(to iterate over a Map)
   ```
-SynchronizedWrappers
-  Interface.synchronizedXXX
-UnmodifiableWrappers
-  Interface.unmodifiableXXX
+SynchronizedWrappers<br>
+  Interface.synchronizedXXX<br>
+UnmodifiableWrappers<br>
+  Interface.unmodifiableXXX<br>
