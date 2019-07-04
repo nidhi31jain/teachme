@@ -4,13 +4,13 @@
 
  * Iterable (Interface)
    *  Collection (Interface) extends Iterable
-     * List (Interface) extends Collection
-       * ArrayList (Class) implements List
-       * LinkedList (Class) implements List
-     * Set
-       * HashSet (Class)
-       * SortedSet extends HashSet implements Set
-         * TreeSet (Class) extends HashSet implements SortedSet
+      * List (Interface) extends Collection
+        * ArrayList (Class) implements List
+        * LinkedList (Class) implements List
+      * Set
+        * HashSet (Class)
+        * SortedSet extends HashSet implements Set
+          * TreeSet (Class) extends HashSet implements SortedSet
  
 * Map (Interface)
   * HashMap (Interface) extends Iterable
