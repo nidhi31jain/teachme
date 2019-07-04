@@ -35,18 +35,18 @@ Class  -> Blueprint on which Objects are created
   3. Methods with same name anbd different parameters - Method overloading
   4.  Inherited instance methods from classes can override abstract interface methods
 
-# Overloading methods
+#### Overloading methods
 * Different Parameters(By type or by Numbers)
 * The compiler does not consider return type when differentiating methods
 * In method overloading , the most specific version is choosed  for the type
   When overloading a method , the Access level cannot be reduced
-# Overriding methods
+#### Overriding methods
 Method return Type - You can reurn an object which is of same type , or a Subclass of it
 
 ## Polymorphism
    * Subclasses define its own behaviour , but same functionality of the Parent class
     
- # Data Type
+# Data Type
 byte - 8 bit
 short - 16 bit
 int - 32 bit
@@ -137,6 +137,7 @@ Post-Increment
 * null -> not instance of anything
 * Switch case works for Numbers , Enums , Strings
 * labeled, unlabelled break/continue
+
 ## Equals and ==
 == Works on Primitives only, checks if the references match
 equals compares the actual Objects
@@ -190,6 +191,7 @@ Call by reference - The caller and the calee has same variables
    * Cannot have static variables , as it belongs to instance of the Outer class
    * Can access variables that are declared final/ Effectively Final (Java8)
 To access a variable outside scope of the Inner class(if the var is of same name) , use OuterClass.this.var
+
 # ENUM - Set of predefined Constants
 # Annotations
 - Compiletime/Deployment time - @Override
