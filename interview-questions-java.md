@@ -1,5 +1,5 @@
-* OOPS Concept---
-* How Abstraction Works
+# OOPS Concept
+## How Abstraction Works
       Abstraction as an OOP concept in Java works by letting programmers create useful, 
       reusable tools. For example, a programmer can create several different types of objects. 
       These can be variables, functions, or data structures. Programmers can also create different classes of objects. 
@@ -9,19 +9,19 @@
       shall have a name, street, city, and zip code. The objects, in this case, might be employee addresses, 
       customer addresses, or supplier addresses.
 
-* How Encapsulation Works
+## How Encapsulation Works
       Encapsulation lets us re-use functionality without jeopardizing security. It’s a powerful OOP concept in Java because 
       it helps us save a lot of time. For example, we may create a piece of code that calls specific data from a database. 
       It may be useful to reuse that code with other databases or processes. Encapsulation lets us do that while keeping our 
       original data private. It also lets us alter our original code without breaking it for others who have adopted it in the 
       meantime.
 
-* How Inheritance Works
+## How Inheritance Works
       Inheritance is another labor-saving Java OOP concept. It works by letting a new class adopt the properties of another. 
       We call the inheriting class a subclass or a child class. The original class is often called the parent. We use the 
       keyword extends to define a new class that inherits properties from an old class.
 
-* How Polymorphism Works
+## How Polymorphism Works
       Polymorphism in Java works by using a reference to a parent class to affect an object in the child class. 
       We might create a class called “horse” by extending the “animal” class. That class might also implement the 
       “professional racing” class. The “horse” class is “polymorphic,” since it inherits attributes of both the “animal” and 
