@@ -8,7 +8,7 @@
         * ArrayList (Class) implements List
         * LinkedList (Class) implements List
       * Set
-        * HashSet (Class)
+        * HashSet (Class) implements Set
         * SortedSet extends HashSet implements Set
           * TreeSet (Class) extends HashSet implements SortedSet
  
