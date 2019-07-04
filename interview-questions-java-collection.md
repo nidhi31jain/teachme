@@ -29,6 +29,13 @@
 * removeAll - subtraction
 * retainAll - intersection
 * clear
+
+#### List(Interface) - Ordered collection - ArrayList(Class) , LinkedList(Class)
+- binary search
+- Positional Access using index
+- ListIterator specically designed for list to iterate item from list 
+- sort
+
 #### Iterator Interface methods
 * hasNext
 * next
@@ -36,11 +43,7 @@
     
 Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
-## List - Ordered collection - ArrayList , LinkedList
-- Positional Access
-- ListIterator
-- sort
-- binary search
+## 
 
 ## Queue - LinkedList
 Throws exception
