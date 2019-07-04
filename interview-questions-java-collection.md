@@ -11,11 +11,6 @@
         * HashSet (Class) implements Set
         * SortedSet extends HashSet implements Set
           * TreeSet (Class) extends HashSet implements SortedSet
- 
-* Map (Interface)
-  * HashMap (Interface) extends Iterable
-    * SortedMap (Interface) extends HashMap implements Map
-    * TreeMap (Class) extends HashMap implements SortedMap
        
 [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
 
@@ -35,17 +30,7 @@
 - Positional Access using index
 - ListIterator specically designed for list to iterate item from list 
 - sort
-
-#### Iterator Interface methods
-* hasNext
-* next
-* Remove
-    
-Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
-
-## 
-
-## Queue - LinkedList
+#### Queue - LinkedList
 Throws exception
 - add
 - remove
@@ -54,13 +39,29 @@ Returns special value
 - offer
 - poll
 - peek
-## DeQueue - LinkedList
+#### DeQueue - LinkedList
 - all operations of Queue at the begining and end
+
+#### Iterator Interface methods
+
+* hasNext
+* next
+* Remove
+    
+Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
+
 ## Map - Key and values - HashMap , TreeMap , LinkedHashMap
-- Collection Views
+* Map (Interface)
+  * HashMap (Interface) extends Iterable
+    * SortedMap (Interface) extends HashMap implements Map
+    * TreeMap (Class) extends HashMap implements SortedMap
+
+* Collection Views
   - Keyset
-  -Values
-  -Entryset(to iterate over a Map)
+  - Values
+  - getKey(key)
+  - Entryset(to iterate over a Map)
+  
 SortedSet
 SortedMap - Keys in sorted Order
 SynchronizedWrappers
