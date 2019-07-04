@@ -2,8 +2,8 @@
     - Group of elements
     - Provides useful data structures and algorithms
     
- Itreatable 
-     |
+ Itreatable <br>
+     |<br>
  Collection    
     
 ## Collection Interface
