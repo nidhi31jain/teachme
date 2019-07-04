@@ -19,7 +19,7 @@
        
 [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
 
-### Collection Interface methods
+#### Collection Interface methods
 * size
 * isEmpty
 * add
@@ -29,7 +29,7 @@
 * removeAll - subtraction
 * retainAll - intersection
 * clear
-### Iterator Interface methods
+#### Iterator Interface methods
 * hasNext
 * next
 * Remove
