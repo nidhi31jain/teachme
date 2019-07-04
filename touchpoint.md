@@ -7,14 +7,22 @@ Object -> Representation of states and behavior of real world Objects
 Class  -> Blueprint on which Objects are created
 
 # OOPS 
-Inheritance -> State and Behaviour inherited from super classes
-Interface -> Contract between class and outside world
-          -> Hiding details and showing functionality
-Encapsulation -> Hiding Internal Details -> Achieved using getters and Setters
-Abstraction -> Hiding implementation -> Achieved using abstract and Interfaces
-Polymorphism - > Object having different forms
-    - Subclasses define its own behaviour , but same functionality of the Parent class
-    - Interface/Parent class type
+* Inheritance
+  State and Behaviour inherited from super classes
+  * Contract between class and outside world
+  * Hiding details and showing functionality
+  Example -
+* Encapsulation
+  Hiding Internal Details -> Achieved using getters and Setters
+  Example -
+* Abstraction 
+  Hiding implementation -> Achieved using abstract and Interfaces
+  Example -
+* Polymorphism
+  Object having different forms
+  * Subclasses define its own behaviour , but same functionality of the Parent class
+  * Interface/Parent class type
+  Example -
     
 ## Inheritance
   * Get the state and Behaviour from the super classes
