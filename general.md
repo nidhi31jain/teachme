@@ -1,26 +1,55 @@
-General interview questions
-As a candidate for software developer role you have to be prepared for general, non-technical questions. Some of them you probably don't like, but you may hear them.
+# Collections Framwork
+    - Group of elements
+    - Provides useful data structures and algorithms
+    
+ Itreatable 
+     |
+ Collection    
+    
+## Collection Interface
+  * size
+  * isEmpty
+  * add
+  * remove
+  * iterator
 
-# Formal
+  * addAll - union
+  * removeAll - subtraction
+  * retainAll - intersection
+  * clear
+  
+ * Iterator
+    *# hasNext
+    *# next
+    *# Remove
+    
+Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
-* What's your notice period?
-* What's your salary expectations?
-* What type of agreement do you prefer?
+## List - Ordered collection - ArrayList , LinkedList
+- Positional Access
+- ListIterator
+- sort
+- binary search
 
-# Not formal
-
-* Tell something about your experience.
-* Tell something about your projects.
-* What are your motivations to change the job?
-* Do you know something about company and its products? What's your opinion about it?
-* Where do you see yourself in 5 years?
-* Do you consider yourself as a leader or a follower?
-* Do you plan to dive into technical roles or to be a manager in the future?
-* Did you take any risky decisions? What was the final effect of it?
-* What do you do when someone criticize your work?
-* What kind of manager would you like to work with?
-* What kind of people would you like to work with?
-* What are the things you like at work?
-* What are the things you don't like at work?
-* What kind of environment would you like to work in?
-* How do you learn new things and gather the knowledge?
+## Queue - LinkedList
+Throws exception
+- add
+- remove
+- element
+Returns special value
+- offer
+- poll
+- peek
+## DeQueue - LinkedList
+- all operations of Queue at the begining and end
+## Map - Key and values - HashMap , TreeMap , LinkedHashMap
+- Collection Views
+  - Keyset
+  -Values
+  -Entryset(to iterate over a Map)
+SortedSet
+SortedMap - Keys in sorted Order
+SynchronizedWrappers
+  Interface.synchronizedXXX
+UnmodifiableWrappers
+  Interface.unmodifiableXXX
