@@ -13,9 +13,9 @@
          * TreeSet (Class) extends HashSet implements SortedSet
  
 * Map (Interface)
-*  HashMap (Interface) extends Iterable
- * SortedMap (Interface) extends HashMap implements Map
-   * TreeMap (Class) extends HashMap implements SortedMap
+  * HashMap (Interface) extends Iterable
+    * SortedMap (Interface) extends HashMap implements Map
+    * TreeMap (Class) extends HashMap implements SortedMap
        
 [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
 
