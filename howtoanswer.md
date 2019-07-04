@@ -26,6 +26,3 @@
   * Scalable
   * Resulbility 
   * etc
-  
-  
-  
