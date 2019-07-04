@@ -19,22 +19,20 @@
        
 [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
 
-## Collection Interface
-  * size
-  * isEmpty
-  * add
-  * remove
-  * iterator
-
-  * addAll - union
-  * removeAll - subtraction
-  * retainAll - intersection
-  * clear
-  
- * Iterator
-    *# hasNext
-    *# next
-    *# Remove
+### Collection Interface methods
+* size
+* isEmpty
+* add
+* remove
+* iterator
+* addAll - union
+* removeAll - subtraction
+* retainAll - intersection
+* clear
+### Iterator Interface methods
+* hasNext
+* next
+* Remove
     
 Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
