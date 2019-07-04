@@ -1,4 +1,4 @@
-# Collections Framwork
+# Collections Framwork [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
     - Group of elements
     - Provides useful data structures and algorithms
 
@@ -12,7 +12,7 @@
         * SortedSet extends HashSet implements Set
           * TreeSet (Class) extends HashSet implements SortedSet
        
-[Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
+
 
 #### Collection Interface methods
 ```
