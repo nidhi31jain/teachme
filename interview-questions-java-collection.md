@@ -1,7 +1,6 @@
 # Collections Framwork [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
     - Group of elements
     - Provides useful data structures and algorithms
-
  * Iterable (Interface)
    *  Collection (Interface) extends Iterable
       * List (Interface) extends Collection
@@ -11,9 +10,6 @@
         * HashSet (Class) implements Set
         * SortedSet extends HashSet implements Set
           * TreeSet (Class) extends HashSet implements SortedSet
-       
-
-
 #### Collection Interface methods
 ```
 - int size() 
@@ -28,7 +24,6 @@
 - retainAll() - intersection
 - clear
 ```
-
 #### List(Interface) - Ordered collection - ArrayList(Class) , LinkedList(Class)
 - binary search
 - Positional Access using index
@@ -49,7 +44,6 @@ Returns special value
 ```
 #### DeQueue - LinkedList
 - all operations of Queue at the begining and end
-
 ## Iterator Interface methods
 ```
 - boolean hasNext() 
@@ -65,20 +59,18 @@ while(iterator.hashNext()){
 ```    
 Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
-## Map - Key and values - HashMap , TreeMap , LinkedHashMap
+# Map - Key and values - HashMap , TreeMap , LinkedHashMap
 * Map (Interface)
   * HashMap (Interface) extends Iterable
-    * SortedMap (Interface) extends HashMap implements Map
+    * SortedMap (Interface) extends HashMap implements Map - Keys in sorted Order
     * TreeMap (Class) extends HashMap implements SortedMap
-
-* Collection Views
-  - Keyset
-  - Values
-  - getKey(key)
-  - Entryset(to iterate over a Map)
-  
-SortedSet
-SortedMap - Keys in sorted Order
+```
+Methods
+  - map.keyset()
+  - apvalues()
+  - map.getKey(key)
+  - map.entrySet(to iterate over a Map)
+  ```
 SynchronizedWrappers
   Interface.synchronizedXXX
 UnmodifiableWrappers
