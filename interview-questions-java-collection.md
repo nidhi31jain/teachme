@@ -85,8 +85,13 @@ UnmodifiableWrappers<br>
 - Comparator , Compares two objects - Custom sorting - Sorting a Library
 - ClasscastException when the Comparator , or comparable is not implemented
 # Hashcode
-- By definition, if two objects are equal, their hash code must also be equal. If you override the equals() method, you change the way two objects are equated and Object's implementation of hashCode() is no longer valid 
-Therefore, if you override the equals() method, you must also override the hashCode() method as well.
+- By definition, if two objects are equal, their hash code must also be equal. 
 
-When inserting data to HashTable , the Hashcode method is used to generate the key. If the same key is present, then the equal method is checked.So , if two objects are equal , then the hashcode should be definitely same
+If you override the equals() method, you change the way two objects are equated <br>
+and Object's implementation of hashCode() is no longer valid <br>
+Therefore, if you override the equals() method, you must also override the hashCode() method as well. <br>
+
+When inserting data to HashTable , the Hashcode method is used to generate the key. <br>
+If the same key is present, then the equal method is checked.<br>
+So , if two objects are equal , then the hashcode should be definitely same.
 
