@@ -3,7 +3,7 @@
     - Provides useful data structures and algorithms
 
  * Iterable
-   *  <span style="color:red">Collection</span>
+   *  <font color='red'>Collection</font>
      * <span style="color:blue">AbstractCollection</span>
      * <span style="color:red">List</span>
        * <span style="color:green">ArrayList</span>
