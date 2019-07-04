@@ -15,15 +15,19 @@
 [Reference](https://www.novixys.com/blog/wp-content/uploads/2017/02/Collections-768x480.png)
 
 #### Collection Interface methods
-* size
-* isEmpty
-* add
-* remove
-* iterator
-* addAll - union
-* removeAll - subtraction
-* retainAll - intersection
-* clear
+```
+- int size() 
+- boolean isEmpty() return true/(boolean) if collection is empty else false 
+- boolean add(Object object)
+- void add(index, Object object)
+- boolean remove(Object object)
+- Iterator iterator()  return a Iterator object 
+- addAll(Collection collection) - union of two collection to one - list.addAll(otherlist)
+- remove(Object object) - subtraction
+- removeAll(Collection collection) - subtraction
+- retainAll() - intersection
+- clear
+```
 
 #### List(Interface) - Ordered collection - ArrayList(Class) , LinkedList(Class)
 - binary search
@@ -32,22 +36,33 @@
 - sort
 #### Queue - LinkedList
 Throws exception
+``` 
 - add
 - remove
 - element
+```
 Returns special value
+```
 - offer
 - poll
 - peek
+```
 #### DeQueue - LinkedList
 - all operations of Queue at the begining and end
 
-#### Iterator Interface methods
+## Iterator Interface methods
+```
+- boolean hasNext() 
+- Object next()
+Remove
 
-* hasNext
-* next
-* Remove
-    
+List<String> listString = new ArrayList<>();
+Iterator iterator = list.iterator()
+while(iterator.hashNext()){
+    String value = (String)iterator.next();
+    //TODO the rest
+}
+```    
 Set Interface - Cannot contain duplicate elements - HashSet(default 16 size) , TreeSet , LinkedHashSet
 
 ## Map - Key and values - HashMap , TreeMap , LinkedHashMap
