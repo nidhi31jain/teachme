@@ -138,7 +138,7 @@ Post-Increment
 * Switch case works for Numbers , Enums , Strings
 * labeled, unlabelled break/continue
 
-## Equals and ==
+## Equals vs ==
 == Works on Primitives only, checks if the references match
 equals compares the actual Objects
 
