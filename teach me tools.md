@@ -14,6 +14,15 @@ This project is to add my learning.
   Practice : Create a postman project and call 
 
 #### Jenkins (Time Required : 1 Hours)
+##### Prerequisite
+* Install Maven 
+  * Go to [Maven](https://maven.apache.org/download.cgi) and download it
+  * Place this to you User/apps directory or any directory of your choice
+  * Open terminal and goto /Users/user_name (username is your username of the system)
+  * vi .bash_profile
+  * Add MAVEN_HOME=User/apps directory or any directory of your choice
+  * Add PATH=User/apps directory or any directory of your choice/bin:${PATH}
+  
   How to setup a SpringBoot Project in to jenkins
   * https://jenkins.io/doc/book/installing/#war-file
   * Run below command from the directory you downloaded <br> 
