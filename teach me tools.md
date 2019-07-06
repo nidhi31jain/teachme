@@ -38,13 +38,20 @@ This project is to add my learning.
     * Go to Jenkins Dashboard 
     * New Item 
     * Maven Project option will be available
-    
+
+###### Install Deploy to container Plugin into Jenkins
+    * Click Available 
+    * Search and select Deploy to container
+    * Click on Install
+
 ###### Set MAVEN_HOME variable Value in Jenkins
     * Go to Manage Jenkins
     * Global tool configuration
     * Maven 
     * Add Maven_home variable value (i.e. path of the maven file on your system).
-    
+
+
+
 #### Git (Time Required : 1 Hours)
 
 
