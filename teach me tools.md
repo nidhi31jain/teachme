@@ -18,23 +18,24 @@ This project is to add my learning.
   * https://jenkins.io/doc/book/installing/#war-file
   * Run below command from the directory you downloaded <br> 
     ``` java -jar jenkins.war –-httpPort=8888 ```
-  * Install Maven Integration Plugin into Jenkins
+###### Install Maven Integration Plugin into Jenkins
     * Go to Jenkins Dashboard 
     * Click on Manage Jenkins 
     * Click on Manage plugins 
     * Click Available 
     * Search and select Maven Integration 
     * Click on Install
-  * Set MAVEN_HOME variable Value in Jenkins
-    * Go to Manage Jenkins
-    * Global tool configuration
-    * Maven 
-    * Add Maven_home variable value (i.e. path of the maven file on your system).
   * Validate the installation of Maven Integration Plugin
     * Go to Jenkins Dashboard 
     * New Item 
     * Maven Project option will be available
-
+    
+###### Set MAVEN_HOME variable Value in Jenkins
+    * Go to Manage Jenkins
+    * Global tool configuration
+    * Maven 
+    * Add Maven_home variable value (i.e. path of the maven file on your system).
+    
 #### Git (Time Required : 1 Hours)
 
 
