@@ -44,6 +44,9 @@ This project is to add my learning.
     * Search and select Deploy to container
     * Click on Install
 
+###### Install Cloud Foundry
+
+
 ###### Set MAVEN_HOME variable Value in Jenkins
     * Go to Manage Jenkins
     * Global tool configuration
