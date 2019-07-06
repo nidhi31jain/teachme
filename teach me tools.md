@@ -16,8 +16,8 @@ This project is to add my learning.
 #### Jenkins (Time Required : 1 Hours)
   How to setup 
   * https://jenkins.io/doc/book/installing/#war-file
-  * Run below command from the directory you downloaded <br>
-    ``` java -jar jenkins.war –httpPort=8888 ```
+  * Run below command from the directory you downloaded <br> 
+    ``` java -jar jenkins.war –-httpPort=8888 ```
 
 #### Git (Time Required : 1 Hours)
 
