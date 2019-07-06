@@ -14,10 +14,26 @@ This project is to add my learning.
   Practice : Create a postman project and call 
 
 #### Jenkins (Time Required : 1 Hours)
-  How to setup 
+  How to setup a SpringBoot Project in to jenkins
   * https://jenkins.io/doc/book/installing/#war-file
   * Run below command from the directory you downloaded <br> 
     ``` java -jar jenkins.war –-httpPort=8888 ```
+  * Install Maven Integration Plugin into Jenkins
+    * Go to Jenkins Dashboard 
+    * Click on Manage Jenkins 
+    * Click on Manage plugins 
+    * Click Available 
+    * Search and select Maven Integration 
+    * Click on Install
+  * Set MAVEN_HOME variable Value in Jenkins
+    * Go to Manage Jenkins
+    * Global tool configuration
+    * Maven 
+    * Add Maven_home variable value (i.e. path of the maven file on your system).
+  * Validate the installation of Maven Integration Plugin
+    * Go to Jenkins Dashboard 
+    * New Item 
+    * Maven Project option will be available
 
 #### Git (Time Required : 1 Hours)
 
