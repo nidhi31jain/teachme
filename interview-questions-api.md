@@ -87,7 +87,10 @@
 
 * What is cloud native applications, what benefit it brings, any experience of building that?
 
+            Cloud native is a term used to describe container-based environments. Cloud-native technologies are used to                   develop applications built with services packaged in containers, deployed as microservices and managed on elastic             infrastructure through agile DevOps processes and continuous delivery 
+
 * What is Object Oriented Programming Principles, give  me example of few principle with example?
+
             Encapsulation, 
             Data Abstraction, 
             Polymorphism,
