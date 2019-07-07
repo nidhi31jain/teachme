@@ -34,6 +34,20 @@
 
 * What is cloud technologies (IaaS, PaaS)
 
+      PaaS Example :
+            A good example of PaaS is AWS Elastic Beanstalk
+
+            That’s where AWS Elastic Beanstalk comes in: it works as another layer on top of the infrastructure services and               automatically handles the details of capacity provisioning, load balancing, scaling, and application health                   monitoring.
+            
+       IaaS Example :
+            A good example of IaaS is AWS EC2.
+            So users only pay for the usage of the servers, saving them the cost (and associated ongoing maintenance) of                   investing in physical hardware.
+            
+       SaaS Example :
+            BigCommerce is an example of a SaaS ecommerce platform.
+
+            BigCommerce provides complete shopping cart software, as well as hosting infrastructure to the user, allowing                 businesses to create an online shop within minutes without worrying about coding, hosting, or software.
+
 * What is serverless technologies
 
             Serverless computing is a cloud-computing execution model in which the cloud provider runs the server, and                    dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources                     consumed by an application, rather than on pre-purchased units of capacity.
