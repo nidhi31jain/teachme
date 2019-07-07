@@ -14,9 +14,11 @@
         Provide filtering, sorting, field selection and paging for collections.
 
 * What do you mean by fault tolerant?
+
           Fault tolerance is the property that enables a system to continue operating properly in the event of the failure of           (or one or more faults within) some of its components.
 
 * What do you mean by elastically scalable?
+
           Scalability: "Increasing" the capacity to meet the "increasing" workload.
 
           Elasticity: "Increasing or reducing" the capacity to meet the "increasing or reducing" workload
@@ -33,7 +35,8 @@
 * What is cloud technologies (IaaS, PaaS)
 
 * What is serverless technologies
-Serverless computing is a cloud-computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity.
+
+            Serverless computing is a cloud-computing execution model in which the cloud provider runs the server, and                    dynamically manages the allocation of machine resources. Pricing is based on the actual amount of resources                     consumed by an application, rather than on pre-purchased units of capacity.
 
 * How you enhance standards and improve process efficiency through automation? Example and what you can do for it?
 
@@ -91,6 +94,7 @@ Serverless computing is a cloud-computing execution model in which the cloud pro
             Inheritance
 
 * What is micro service?
+
              Microservices Concept. Microservices architecture consists of collections of light-weight, loosely-coupled                    services. Each service implements a single business capability. Ideally, these services should be cohesive enough              to develop, test, release, deploy, scale, integrate, and maintain independently.
              
 * What is micro-service design, and why it is important, give me an example from your experience?
@@ -107,4 +111,14 @@ Serverless computing is a cloud-computing execution model in which the cloud pro
             Service statelessness
             Service discoverability
             Service composability
+* Microservice Principles:
 
+            Scalability
+            Availability
+            Resiliency
+            Flexibility
+            Independent, autonomous
+            Decentralized governance
+            Failure isolation
+            Auto-Provisioning
+            Continuous delivery through DevOps
