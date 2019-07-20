@@ -41,7 +41,18 @@ As a candidate for software developer role you have to be prepared for general, 
 
 * Tell something about your experience.
 * Tell something about your projects.
-* What are your motivations to change the job?
+* What are your motivations to for the job?
+  I would like to get my carrer back on the track, Desire to gain knowledge and use my experience and skills for the groth of the company.
+  * how do you keep yourself motivationed?
+  * Desire to learn and use my experience and skills for the groth of the project/company.
+  * Desire to gain a new skill/domain/knowledge or grow a current skill.
+  * Desire to take on more responsibility.
+  * Desire to relocate.
+  * Desire for a career change.
+  * Company reorganization has led to change in job content.
+  * Desire for a shorter commute to work.
+  * Desire to improve work/life balance.
+  * Desire to fullfill kids wishlist
 * Do you know something about company and its products? What's your opinion about it?
 * Where do you see yourself in 5 years?
 * Do you consider yourself as a leader or a follower?
