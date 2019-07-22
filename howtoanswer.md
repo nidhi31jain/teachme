@@ -41,24 +41,25 @@ As a candidate for software developer role you have to be prepared for general, 
 
 * Tell something about your experience.
 * Tell something about your projects.
-* What are your motivations to for the job?
+* What are your motivations to for the job? <br>
   I would like to get my carrer back on the track, Desire to gain knowledge and use my experience and skills for the groth of the company.
-  * how do you keep yourself motivationed?
-  * Desire to learn and use my experience and skills for the groth of the project/company.
-  * Desire to gain a new skill/domain/knowledge or grow a current skill.
-  * Desire to take on more responsibility.
-  * Desire to relocate.
-  * Desire for a career change.
-  * Company reorganization has led to change in job content.
-  * Desire for a shorter commute to work.
-  * Desire to improve work/life balance.
-  * Desire to fullfill kids wishlist
+
+* How do you keep yourself motivated?
+   Success keeps me motivated.Success can be defined in different ways like achieving the gola, delivering within the target,    getting award/appreciation etc. So when I get successin one task, it motivates  me to do next task with more energy.
+  
 * Do you know something about company and its products? What's your opinion about it?
 * Where do you see yourself in 5 years?
-* Do you consider yourself as a leader or a follower?
+* Do you consider yourself as a leader or a follower? 
+* Did you lead any project?
+   Yes in Sainsbury's project, I was the integration lead. I was the single point of contact for Integration, working with      cross functional teams. I had to get the development done from my team, review it, solve their technical issue and get their    queries clarified by BA/stakeholders, provide guidance.
 * Do you plan to dive into technical roles or to be a manager in the future?
 * Did you take any risky decisions? What was the final effect of it?
+
 * What do you do when someone criticize your work?
+  See it as an opportunity. We're too close to our own work to view it objectively.
+  Listen and keep an open mind. Actively listen to the feedback and check your ego at the door. ...
+  See what you can learn. You already know that no one is perfect, so keep that in mind and seek out personal improvement.
+  
 * What kind of manager would you like to work with?
 * What kind of people would you like to work with?
 * What are the things you like at work?
