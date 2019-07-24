@@ -55,10 +55,10 @@ Yes in xyz's project, I was the integration lead. I was the single point of cont
 * Do you plan to dive into technical roles or to be a manager in the future?
 * Did you take any risky decisions? What was the final effect of it?
 
-* What do you do when someone criticize your work?
-  See it as an opportunity. We're too close to our own work to view it objectively.
-  Listen and keep an open mind. Actively listen to the feedback and check your ego at the door. ...
-  See what you can learn. You already know that no one is perfect, so keep that in mind and seek out personal improvement.
+* What do you do when someone criticize your work?<br>
+See it as an opportunity. We're too close to our own work to view it objectively.<br>
+Listen and keep an open mind. Actively listen to the feedback and check your ego at the door. ...<br>
+See what you can learn. You already know that no one is perfect, so keep that in mind and seek out personal improvement.<br>
   
 * What kind of manager would you like to work with?
 * What kind of people would you like to work with?
