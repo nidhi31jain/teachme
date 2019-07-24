@@ -42,16 +42,16 @@ As a candidate for software developer role you have to be prepared for general, 
 * Tell something about your experience.
 * Tell something about your projects.
 * What are your motivations to for the job? <br>
-  I would like to get my carrer back on the track, Desire to gain knowledge and use my experience and skills for the groth of the company.
+I would like to get my carrer back on the track, Desire to gain knowledge and use my experience and skills for the groth of the company.
 
-* How do you keep yourself motivated?
-   Success keeps me motivated.Success can be defined in different ways like achieving the gola, delivering within the target,    getting award/appreciation etc. So when I get successin one task, it motivates  me to do next task with more energy.
+* How do you keep yourself motivated?<br>
+Success keeps me motivated.Success can be defined in different ways like achieving the gola, delivering within the target,    getting award/appreciation etc. So when I get successin one task, it motivates  me to do next task with more energy.
   
 * Do you know something about company and its products? What's your opinion about it?
 * Where do you see yourself in 5 years?
 * Do you consider yourself as a leader or a follower? 
-* Did you lead any project?
-   Yes in xyz's project, I was the integration lead. I was the single point of contact for Integration, working with      cross functional teams. I had to get the development done from my team, review it, solve their technical issue and get their    queries clarified by BA/stakeholders, provide guidance.
+* Did you lead any project?<br>
+Yes in xyz's project, I was the integration lead. I was the single point of contact for Integration, working with      cross functional teams. I had to get the development done from my team, review it, solve their technical issue and get their    queries clarified by BA/stakeholders, provide guidance.
 * Do you plan to dive into technical roles or to be a manager in the future?
 * Did you take any risky decisions? What was the final effect of it?
 
