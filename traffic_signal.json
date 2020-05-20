@@ -1,0 +1,251 @@
+{
+  "name": "traffic-signal",
+  "type": "flogo:app",
+  "version": "0.0.1",
+  "appModel": "1.1.0",
+  "description": "",
+  "imports": [
+    "github.com/TIBCOSoftware/flogo-contrib/activity/gpio",
+    "github.com/project-flogo/contrib/activity/actreturn",
+    "github.com/project-flogo/contrib/activity/log",
+    "github.com/project-flogo/contrib/trigger/rest",
+    "github.com/project-flogo/flow"
+  ],
+  "triggers": [
+    {
+      "id": "receive_http_message",
+      "ref": "#rest",
+      "name": "Receive HTTP Message",
+      "description": "Simple REST Trigger",
+      "settings": {
+        "port": 1984
+      },
+      "handlers": [
+        {
+          "settings": {
+            "method": "GET",
+            "path": "/nidhi/light"
+          },
+          "action": {
+            "ref": "#flow",
+            "settings": {
+              "flowURI": "res://flow:light_flow"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "flow:light_flow",
+      "data": {
+        "name": "Light_Flow",
+        "metadata": {
+          "output": [
+            {
+              "name": "code",
+              "type": "integer"
+            },
+            {
+              "name": "message",
+              "type": "string"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "id": "log_2",
+            "name": "Log",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "message": "Flow started!!",
+                "addDetails": false,
+                "usePrint": false
+              }
+            }
+          },
+          {
+            "id": "gpio_3",
+            "name": "Control GPIO",
+            "description": "Control raspberry gpio",
+            "activity": {
+              "ref": "#gpio",
+              "input": {
+                "method": "Direction",
+                "direction": "Output",
+                "pinNumber": 36
+              }
+            }
+          },
+          {
+            "id": "gpio_4",
+            "name": "Control GPIO (2)",
+            "description": "Control raspberry gpio",
+            "activity": {
+              "ref": "#gpio",
+              "input": {
+                "method": "Read State",
+                "pinNumber": 36
+              }
+            }
+          },
+          {
+            "id": "log_5",
+            "name": "Log (2)",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "message": "Flow to switch on",
+                "addDetails": false,
+                "usePrint": false
+              }
+            }
+          },
+          {
+            "id": "gpio_6",
+            "name": "Control GPIO (3)",
+            "description": "Control raspberry gpio",
+            "activity": {
+              "ref": "#gpio",
+              "input": {
+                "state": "High",
+                "method": "Set State",
+                "pinNumber": 36
+              }
+            }
+          },
+          {
+            "id": "log_11",
+            "name": "Log (4)",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "message": "=$activity[gpio_6].result",
+                "addDetails": false,
+                "usePrint": false
+              }
+            }
+          },
+          {
+            "id": "actreturn_12",
+            "name": "Return (3)",
+            "description": "Return Activity",
+            "activity": {
+              "ref": "#actreturn",
+              "settings": {
+                "mappings": {
+                  "code": 200,
+                  "message": "On"
+                }
+              }
+            }
+          },
+          {
+            "id": "log_8",
+            "name": "Log (3)",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "message": "Flow to switch off",
+                "addDetails": false,
+                "usePrint": false
+              }
+            }
+          },
+          {
+            "id": "gpio_9",
+            "name": "Control GPIO (4)",
+            "description": "Control raspberry gpio",
+            "activity": {
+              "ref": "#gpio",
+              "input": {
+                "method": "Set State",
+                "state": "Low",
+                "pinNumber": 36
+              }
+            }
+          },
+          {
+            "id": "log_13",
+            "name": "Log (5)",
+            "description": "Logs a message",
+            "activity": {
+              "ref": "#log",
+              "input": {
+                "addDetails": false,
+                "usePrint": false,
+                "message": "=$activity[gpio_9].result"
+              }
+            }
+          },
+          {
+            "id": "actreturn_14",
+            "name": "Return (4)",
+            "description": "Return Activity",
+            "activity": {
+              "ref": "#actreturn",
+              "settings": {
+                "mappings": {
+                  "code": 200,
+                  "message": "Switched Off"
+                }
+              }
+            }
+          }
+        ],
+        "links": [
+          {
+            "from": "log_2",
+            "to": "gpio_3"
+          },
+          {
+            "from": "gpio_3",
+            "to": "gpio_4"
+          },
+          {
+            "from": "gpio_4",
+            "to": "log_5",
+            "type": "expression",
+            "value": "$activity[gpio_4].result==0"
+          },
+          {
+            "from": "log_5",
+            "to": "gpio_6"
+          },
+          {
+            "from": "gpio_6",
+            "to": "log_11"
+          },
+          {
+            "from": "log_11",
+            "to": "actreturn_12"
+          },
+          {
+            "from": "gpio_4",
+            "to": "log_8",
+            "type": "expression",
+            "value": "$activity[gpio_4].result==1"
+          },
+          {
+            "from": "log_8",
+            "to": "gpio_9"
+          },
+          {
+            "from": "gpio_9",
+            "to": "log_13"
+          },
+          {
+            "from": "log_13",
+            "to": "actreturn_14"
+          }
+        ]
+      }
+    }
+  ]
+}
